@@ -1,5 +1,9 @@
 FROM ubuntu
 
+
+# Set the environment variable
+ENV PIP_BREAK_SYSTEM_PACKAGES=1
+
 WORKDIR /app
 
 COPY requirements.txt /app
